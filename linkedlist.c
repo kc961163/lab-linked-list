@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h> // contains the functions free/malloc
+#include <stdbool.h>
 
 // TODO: Create your node_t type here
 typedef struct node {
@@ -43,6 +44,12 @@ void print(node_t* node) {
     
 }
 
+bool insert_year(int year_to_find, int year, int wins){
+
+
+
+}
+
 node_t* build_list(int* wins, int* years, int size){
 
     node_t* dummy = (node_t*)malloc(sizeof(node_t));
@@ -73,6 +80,8 @@ int main()
     node_t* lists = build_list(test_wins, test_years, 5);
 
     print(lists);
+
+    
 
     free_list(lists);
 
